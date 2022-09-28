@@ -391,7 +391,7 @@ main>.row:nth-child(2)>.container>.col{
 main>.row:nth-child(2)>.container>.col:first-child{
     float: left;
     width: 75%;
-    background-color: #3f4da1;
+    /* background-color: #3f4da1; */
 }
 main>.row:nth-child(2)>.container>.col:last-child{
     float: right;
@@ -431,6 +431,240 @@ main>.row:nth-child(2)>.container>.col:last-child>ul>li a>div{
 main>.row:nth-child(2)>.container>.col:last-child>ul>li a>div:first-child{
     width: 90%;
 }
-main>.row:nth-child(2)>.container>.col:last-child>ul>li a>div:first-child{
-    width: 90%;
+#slider{
+    position: relative;
+    /* width: 850px; */
+    margin-top: 20px;
+    padding: 0 10px;
+    height: 388px;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    overflow-x: hidden;
+    /* width: calc(1170px*0.75*6); */
+    scroll-snap-type:x mandatory;
+    scroll-behavior: smooth;
+}
+#slide-1{
+    background-image: url(https://boc.lk/image/data/Banner/200Day_investment-2022-Sept-Web.jpg);
+}
+#slide-2{
+    left: 100%;
+    background-image: url(https://boc.lk/image/data/Banner/Pita-pita_season-3-2022-E.jpg);
+}
+#slide-3{
+    left: 200%;
+    background-image: url(https://boc.lk/image/data/Banner/SDA-2022-09.jpeg);
+}
+#slide-4{
+    left: 300%;
+    background-image: url(https://boc.lk/image/data/Banner/Top1000_2022-En_1.jpg);
+}
+#slide-5{
+    left: 400%;
+    background-image: url(https://boc.lk/image/data/Banner/green-loan-2022.jpeg);
+}
+#slide-6{
+    left: 500%;
+    background-image: url(https://boc.lk/image/data/Banner/power-branch-close-2022-En-1.jpg);
+}
+.slide{
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 388px;
+    background-size: contain;
+    background-position: center;
+    /* float: left; */
+    width: 100%;
+    scroll-snap-align: center;
+}
+.slide .prev, .slide .next{
+    position: absolute;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(128, 130, 133, 0.9);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    line-height: 28px;
+    border-radius: 100%;
+}
+.slide .prev:hover, .slide .next:hover{
+    background-color: rgba(128, 130, 133, 0.8)
+}
+.slide .prev{
+    left: 10px;
+}
+.slide .next{
+    right: 10px;
+}
+.slide ion-icon{
+    color: white;
+    vertical-align: sub;
+}
+
+@keyframes slider-anim{
+    0%,10%{
+        left: 0;
+    }
+    16%,26%{
+        left: -100%;
+    }
+    32%,58%{
+        left: -200%;
+    }
+    64%, 76%{
+        left: -300%;
+    }
+    82%, 94%{
+        left: -400%;
+    }
+    100%{
+        left: -500%;
+    }
+}
+
+#slid-wrapper{
+    width: 100%;
+    position: relative;
+    animation-name: slider-anim;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+}
+#slider-wrapper{
+    height: 100%;
+    overflow: hidden;
+}
+
+main>.row:nth-child(3){
+    padding: 20px 0;
+}
+main>.row:nth-child(3)>.container .col{
+    /* height: 250px; */
+    width: 25%;
+    float: left;
+    padding: 0 10px;
+    background-clip: content-box;
+    overflow: hidden;
+}
+main>.row:nth-child(3)>.container .col:nth-child(1){
+    background-color: red;
+}
+main>.row:nth-child(3)>.container .col:nth-child(2){
+    background-color: #d74527;
+}
+main>.row:nth-child(3)>.container .col:nth-child(3){
+    background-color: aqua;
+}
+main>.row:nth-child(3)>.container .col:nth-child(4){
+    background-color: crimson;
+}
+main>.row:nth-child(3)>.container>.col img{
+    display: block;
+    width: 100%;
+    transition: transform 500ms;
+}
+main>.row:nth-child(3)>.container>.col .topic{
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background-color: #525252;
+    z-index: 1;
+}
+main>.row:nth-child(3)>.container>.col:hover img{
+    transform: scale(1.2);
+}
+main>.row:nth-child(3)>.container>.col>.wrapper{
+    position: relative;
+    overflow: hidden;
+}
+main>.row:nth-child(3)>.container>.col>.wrapper>.overlay{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+main>.row:nth-child(3)>.container>.col:hover .overlay{
+    display: block;
+}
+main>.row:nth-child(3)>.container>.col:hover .topic{
+    background-color: #ffde00;
+    color: #1f1f1f;
+}
+main>.row:nth-child(4)>.container>.col{
+    float: left;
+    /* height: 100px; */
+}
+main>.row:nth-child(4)>.container>.col:nth-child(1),
+main>.row:nth-child(4)>.container>.col:nth-child(3){
+    text-align: right;
+    padding: 10px;
+    /* background-color: rebeccapurple; */
+    width: 25%;
+    color: #1f1f1f;
+}
+main>.row:nth-child(4)>.container>.col:nth-child(2){
+    /* background-color: blue; */
+    text-align: center;
+    width: 50%;
+    padding-top: 20px;
+}
+main>.row:nth-child(4){
+    padding-bottom: 20px;
+}
+main>.row:nth-child(4)>.container>.col:nth-child(1)>p:first-child{
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+main>.row:nth-child(4)>.container>.col:nth-child(1)>p:last-child{
+    font-size: 20px;
+}
+main>.row:nth-child(4)>.container>.col:nth-child(1)>p:last-child ion-icon{
+    color: #8a8a8a;
+    padding-right: 10px;
+}
+main>.row:nth-child(4)>.container>.col:last-child>p:first-child{
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+main>.row:nth-child(4)>.container>.col:last-child>p:last-child{
+    font-size: 0.7rem;
+    color: #8a8a8a;
+}
+#popup{
+    position: fixed;
+    left: 10px;
+    bottom: 40px;
+    width: 250px;
+    background-color: #8a8a8ae1;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 1px #000000ab;
+}
+
+#popup p{
+    padding-top: 35px;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+}
+
+#close-wrapper{
+    position: absolute;
+    padding: 5px 0;
+    cursor: pointer;
+}
+#close-wrapper:hover{
+    color: white;
+}
+
+#close-wrapper ion-icon{
+    vertical-align: sub;
+    margin-right: 5px;
+    background-color: rgba(255, 0, 0, 0.884);
+    border-radius: 100%;
+    font-size: 1.2rem;
 }
