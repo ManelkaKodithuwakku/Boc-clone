@@ -382,12 +382,11 @@ main>.row:first-child>.container>div:first-child>ul li a:hover img{
     cursor: pointer;
     border: 3px solid #ffde00;
 }
-main>.row:nth-child(2)>.container{
+/* main>.row:nth-child(2)>.container{
     background-color: pink;
-}
+} */
 main>.row:nth-child(2)>.container>.col{
     padding-top: 20px;
-    height: 100px;
 }
 main>.row:nth-child(2)>.container>.col:first-child{
     float: left;
@@ -397,5 +396,41 @@ main>.row:nth-child(2)>.container>.col:first-child{
 main>.row:nth-child(2)>.container>.col:last-child{
     float: right;
     width: 25%;
-    background-color: red;
+}
+main>.row:nth-child(2)>.container>.col:last-child svg{
+    height: 30px;
+}
+main>.row:nth-child(2)>.container>.col:last-child>ul{
+    border-top: 1px solid #ececec;
+}
+main>.row:nth-child(2)>.container>.col:last-child>ul>li{
+    display: table;
+    width: 100%;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #ccc;
+}
+main>.row:nth-child(2)>.container>.col:last-child>ul>li:hover{
+    background-color: #525252;
+}
+main>.row:nth-child(2)>.container>.col:last-child>ul>li:hover a,
+main>.row:nth-child(2)>.container>.col:last-child>ul>li:hover svg{
+    color: #ff9d1e;
+    fill: #ff9d1e;
+}
+main>.row:nth-child(2)>.container>.col:last-child>ul>li a{
+    display: table-row;
+    text-decoration: none;
+    color: black;
+}
+main>.row:nth-child(2)>.container>.col:last-child>ul>li a>div{
+    display: table-cell;
+    padding: 10px 10px 10px 20px;
+    vertical-align: middle;
+    line-height: 1.1rem;
+}
+main>.row:nth-child(2)>.container>.col:last-child>ul>li a>div:first-child{
+    width: 90%;
+}
+main>.row:nth-child(2)>.container>.col:last-child>ul>li a>div:first-child{
+    width: 90%;
 }
