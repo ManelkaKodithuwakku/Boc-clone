@@ -65,7 +65,8 @@ h6{
 
 /* Header App Row */
 
-#app-row>.container>img{
+#app-row>.container>a>img{
+    /* display: inline; */
     height: 60px;
     float: left;
 }
@@ -591,6 +592,26 @@ main>.row:nth-child(3)>.container>.col>.wrapper>.overlay{
 main>.row:nth-child(3)>.container>.col:hover .overlay{
     display: block;
 }
+.overlay>ul{
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.overlay>ul>li a{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
+    outline: 0;
+    text-decoration: none;
+    background: transparent;
+}
+.overlay>ul>li a:hover{
+    color: #ffde00;
+    text-decoration: none;
+}
+
 main>.row:nth-child(3)>.container>.col:hover .topic{
     background-color: #ffde00;
     color: #1f1f1f;
