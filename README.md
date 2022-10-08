@@ -10,8 +10,8 @@
 </h4>
 
 <p align="center">
-  • <a href="#sample-images">Sample Images</a> •
-  <a href="#built-with">Built With</a> •
+  • <a href="#sample-images">Sample images</a> •
+  <a href="#built-with">Built with</a> •
   <a href="#how-to-use-this-repo">How to use this repo?</a> •
   <a href="#contact">Contact</a> •
 </p>
@@ -22,6 +22,7 @@
 
 ![screenshot](images/Screenshot_1.png)
 <br>
+---
 
 ![screenshot](images/Screenshot_2.png)
 
@@ -68,6 +69,8 @@ $ npx serve
 ```
 
 ---
+
+## Contact
 
 > GitHub [@Manelka Kodithuwakku](https://github.com/ManelkaKodithuwakku) &nbsp;&middot;&nbsp;
 > 
