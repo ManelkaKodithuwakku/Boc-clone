@@ -5,13 +5,13 @@
 </h1>
 
 <h4 align="center">
-   This is a clone website of Bank of Ceylon (BOC) of Sri Lanka. The whole design, layouts, and images are copyright to their respective owners <a>boc.lk</a>.
+   This is a clone website of Bank of Ceylon (BOC) of Sri Lanka. The whole design, layouts, and images are copyright to their respective owners <a href="https://www.boc.lk/">boc.lk</a>.
   I have created this design to practice and improve my web designing skills. 
 </h4>
 
 <p align="center">
-  • <a href="#sample-images">Sample images</a> •
-  <a href="#built-with">Built with</a> •
+  • <a href="#sample-images-">Sample images</a> •
+  <a href="#built-with-">Built with</a> •
   <a href="#how-to-use-this-repo">How to use this repo?</a> •
   <a href="#contact">Contact</a> •
 </p>
@@ -34,7 +34,7 @@
 #### HTML5 :
 
 - Semantic Elements
-- images
+- Images
 
 
 [![css_logo](https://forthebadge.com/images/badges/uses-css.svg)](https://developer.mozilla.org/en-US/docs/Web/CSS)
